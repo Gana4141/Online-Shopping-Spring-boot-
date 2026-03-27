@@ -3,12 +3,10 @@ package com.isolutions4u.onlineshopping;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-
-@SpringBootApplication
+@SpringBootApplication   
 public class OnlineShoppingApplication {
-
-    public static void main(String[] args) {
-        SpringApplication.run(OnlineShoppingApplication.class, args);
-    }
-
+	public static void main(String[] args) {
+		SpringApplication.run(OnlineShoppingApplication.class, args);
+		// http://localhost:9090/login
+	}
 }
