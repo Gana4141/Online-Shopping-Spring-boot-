@@ -1,13 +1,14 @@
 package com.isolutions4u.onlineshopping.service;
 
-import com.isolutions4u.onlineshopping.model.Product;
-import com.isolutions4u.onlineshopping.repository.ProductRepository;
+import java.util.ArrayList;
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
 
-import java.util.ArrayList;
-import java.util.List;
+import com.isolutions4u.onlineshopping.model.Product;
+import com.isolutions4u.onlineshopping.repository.ProductRepository;
 
 @Service("productService")
 public class ProductServiceImpl implements ProductService {
@@ -47,8 +48,9 @@ public class ProductServiceImpl implements ProductService {
     public Product findProductById(Integer id) {
         // TODO Auto-generated method stub
         Product product = productRepository.getOne(id);
-        if (!product.isActive())
-            product = null;
+        if (!product.isActive()) {
+			product = null;
+		}
 
         return product;
     }

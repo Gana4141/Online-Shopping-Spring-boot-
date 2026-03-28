@@ -1,7 +1,7 @@
 package com.isolutions4u.onlineshopping.controllers;
 
-import com.isolutions4u.onlineshopping.model.Product;
-import com.isolutions4u.onlineshopping.service.ProductService;
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -9,7 +9,8 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import java.util.List;
+import com.isolutions4u.onlineshopping.model.Product;
+import com.isolutions4u.onlineshopping.service.ProductService;
 
 @RestController
 @RequestMapping("/json/data")

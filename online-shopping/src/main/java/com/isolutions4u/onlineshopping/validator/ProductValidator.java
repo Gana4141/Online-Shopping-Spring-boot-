@@ -1,8 +1,9 @@
 package com.isolutions4u.onlineshopping.validator;
 
-import com.isolutions4u.onlineshopping.model.Product;
 import org.springframework.validation.Errors;
 import org.springframework.validation.Validator;
+
+import com.isolutions4u.onlineshopping.model.Product;
 
 public class ProductValidator implements Validator {
 

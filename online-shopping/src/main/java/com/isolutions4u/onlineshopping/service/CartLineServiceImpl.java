@@ -1,12 +1,13 @@
 package com.isolutions4u.onlineshopping.service;
 
-import com.isolutions4u.onlineshopping.model.Cart;
-import com.isolutions4u.onlineshopping.model.CartLine;
-import com.isolutions4u.onlineshopping.repository.CartLineRepository;
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import java.util.List;
+import com.isolutions4u.onlineshopping.model.Cart;
+import com.isolutions4u.onlineshopping.model.CartLine;
+import com.isolutions4u.onlineshopping.repository.CartLineRepository;
 
 @Service("cartLineService")
 public class CartLineServiceImpl implements CartLineService {

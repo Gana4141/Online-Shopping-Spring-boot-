@@ -1,11 +1,12 @@
 package com.isolutions4u.onlineshopping.service;
 
-import com.isolutions4u.onlineshopping.model.User;
-import com.isolutions4u.onlineshopping.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
+
+import com.isolutions4u.onlineshopping.model.User;
+import com.isolutions4u.onlineshopping.repository.UserRepository;
 
 @Service("userService")
 public class UserServiceImpl implements UserService {

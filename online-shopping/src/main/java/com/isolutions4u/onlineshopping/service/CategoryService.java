@@ -1,8 +1,8 @@
 package com.isolutions4u.onlineshopping.service;
 
-import com.isolutions4u.onlineshopping.model.Category;
-
 import java.util.List;
+
+import com.isolutions4u.onlineshopping.model.Category;
 
 public interface CategoryService {
 

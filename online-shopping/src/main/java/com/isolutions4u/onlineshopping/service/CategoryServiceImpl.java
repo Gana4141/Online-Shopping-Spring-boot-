@@ -1,13 +1,14 @@
 package com.isolutions4u.onlineshopping.service;
 
-import com.isolutions4u.onlineshopping.model.Category;
-import com.isolutions4u.onlineshopping.repository.CategoryRepository;
+import java.util.ArrayList;
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
 
-import java.util.ArrayList;
-import java.util.List;
+import com.isolutions4u.onlineshopping.model.Category;
+import com.isolutions4u.onlineshopping.repository.CategoryRepository;
 
 @Service("categoryService")
 public class CategoryServiceImpl implements CategoryService {

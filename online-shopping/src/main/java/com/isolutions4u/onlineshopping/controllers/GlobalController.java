@@ -1,15 +1,16 @@
 package com.isolutions4u.onlineshopping.controllers;
 
-import com.isolutions4u.onlineshopping.model.User;
-import com.isolutions4u.onlineshopping.model.UserModel;
-import com.isolutions4u.onlineshopping.service.UserService;
+import javax.servlet.http.HttpSession;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ModelAttribute;
 
-import javax.servlet.http.HttpSession;
+import com.isolutions4u.onlineshopping.model.User;
+import com.isolutions4u.onlineshopping.model.UserModel;
+import com.isolutions4u.onlineshopping.service.UserService;
 
 @ControllerAdvice
 public class GlobalController {

@@ -1,10 +1,11 @@
 package com.isolutions4u.onlineshopping.repository;
 
-import com.isolutions4u.onlineshopping.model.Product;
+import java.util.List;
+
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
-import java.util.List;
+import com.isolutions4u.onlineshopping.model.Product;
 
 @Repository("productRepository")
 public interface ProductRepository extends JpaRepository<Product, Integer> {

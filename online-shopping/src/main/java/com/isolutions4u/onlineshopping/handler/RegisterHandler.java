@@ -1,16 +1,17 @@
 package com.isolutions4u.onlineshopping.handler;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.binding.message.MessageBuilder;
+import org.springframework.binding.message.MessageContext;
+import org.springframework.stereotype.Component;
+
 import com.isolutions4u.onlineshopping.model.Address;
 import com.isolutions4u.onlineshopping.model.Cart;
 import com.isolutions4u.onlineshopping.model.RegisterModel;
 import com.isolutions4u.onlineshopping.model.User;
 import com.isolutions4u.onlineshopping.service.AddressService;
 import com.isolutions4u.onlineshopping.service.UserService;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Qualifier;
-import org.springframework.binding.message.MessageBuilder;
-import org.springframework.binding.message.MessageContext;
-import org.springframework.stereotype.Component;
 
 @Component
 public class RegisterHandler {

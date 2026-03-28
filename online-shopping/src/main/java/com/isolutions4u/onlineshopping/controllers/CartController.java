@@ -1,11 +1,5 @@
 package com.isolutions4u.onlineshopping.controllers;
 
-import com.isolutions4u.onlineshopping.model.Cart;
-import com.isolutions4u.onlineshopping.model.CartLine;
-import com.isolutions4u.onlineshopping.model.Product;
-import com.isolutions4u.onlineshopping.service.CartLineService;
-import com.isolutions4u.onlineshopping.service.CartService;
-import com.isolutions4u.onlineshopping.service.ProductService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Controller;
@@ -14,6 +8,13 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
+
+import com.isolutions4u.onlineshopping.model.Cart;
+import com.isolutions4u.onlineshopping.model.CartLine;
+import com.isolutions4u.onlineshopping.model.Product;
+import com.isolutions4u.onlineshopping.service.CartLineService;
+import com.isolutions4u.onlineshopping.service.CartService;
+import com.isolutions4u.onlineshopping.service.ProductService;
 
 @Controller
 @RequestMapping("/cart")

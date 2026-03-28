@@ -1,8 +1,8 @@
 package com.isolutions4u.onlineshopping.service;
 
-import com.isolutions4u.onlineshopping.model.CartLine;
-
 import java.util.List;
+
+import com.isolutions4u.onlineshopping.model.CartLine;
 
 public interface CartLineService {
 

@@ -1,9 +1,8 @@
 package com.isolutions4u.onlineshopping.controllers;
 
-import com.isolutions4u.onlineshopping.model.Category;
-import com.isolutions4u.onlineshopping.model.Product;
-import com.isolutions4u.onlineshopping.service.CategoryService;
-import com.isolutions4u.onlineshopping.service.ProductService;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.security.core.Authentication;
@@ -15,8 +14,10 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
+import com.isolutions4u.onlineshopping.model.Category;
+import com.isolutions4u.onlineshopping.model.Product;
+import com.isolutions4u.onlineshopping.service.CategoryService;
+import com.isolutions4u.onlineshopping.service.ProductService;
 
 @Controller
 public class IndexController {
@@ -128,8 +129,9 @@ public class IndexController {
 
         Product product = productService.findProductById(id);
 
-        if (product == null)
-            throw new ProductNotFoundExceptoion();
+        if (product == null) {
+			throw new ProductNotFoundExceptoion();
+		}
 
         product.setViews(product.getViews() + 1);
         productService.updateProduct(product);
